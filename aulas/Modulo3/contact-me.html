@@ -8,9 +8,14 @@
     <h1>Meus contactos</h1>
     <p>(+000) 9XX-XXX-XXX</p>
     <p>meuemail@gmail.com</p>
-    <form action="">
+    <hr>
+    <form action="mailto:caminharoger@gmail.com" method="post" enctype="text/plain">
         <label>Nome:</label>
-        <input type="text">
+        <input name="nome" type="text"><br>
+        <label>E-mail</label>
+        <input type="email" name="email"><br>
+        <label>Sua mensagem:</label><br>
+        <textarea name="texto" cols="15" rows="5"></textarea><br>
         <input type="submit">
     </form>
 </body>
