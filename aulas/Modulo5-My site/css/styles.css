@@ -1,0 +1,44 @@
+.top{
+    background-color: #E4F9F5;
+    position: relative;
+    padding-top: 100px;
+}
+
+body{
+    margin: 0px;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+
+h1{
+    margin: 0px;
+    font-family: 'Sacramento', cursive;
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.middle{
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+}
+.bottom{
+    background-color: red;
+    width: 200px;
+    height: 200px;
+}
+
+.c2{
+    position: absolute;
+}
+.c1{
+    position: absolute;
+    right: 600px;
+    top: 50px;
+}
