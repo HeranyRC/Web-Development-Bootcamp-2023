@@ -3,8 +3,13 @@
     position: relative;
     padding-top: 100px;
 }
+
+.middle{
+    margin: 100px 0;
+}
+
 .bottom{
-    margin-top: 100px;
+    padding: 50px 0 20px;
     background-color: #66BFBF;
 }
 
@@ -13,6 +18,13 @@ body{
     text-align: center;
     font-family: 'Merriweather', serif;
     font-size: 200%;
+}
+
+hr{
+    border: dotted #EAF6F6 15px;
+    border-bottom: none;
+    width: 5%;
+    margin: 100px auto;
 }
 
 h1{
@@ -28,6 +40,7 @@ h2{
     font-family: 'Montserrat', sans-serif;
     font-size: 2.5rem;
     font-weight: normal;
+    padding-bottom: 10px;
 }
 
 h3{
@@ -37,26 +50,49 @@ h3{
 
 a{
     color: #11999E;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 20px;
+    text-decoration: none;
+}
+
+a:hover{
+    color:#EAF6F6;
 }
 
 p{
-    color: #40514E
+    color: #40514E;
+    line-height: 2;
+
+}
+
+.intro{
+    width: 30%;
+    margin: auto;
+}
+
+
+.c1{
+    position: absolute;
+    right: 600px;
+    top: 60px;
 }
 
 .c2{
     position: absolute;
+    left: 400px;
+    bottom: 250px;
 }
-.c1{
+
+.c3{
     position: absolute;
-    right: 600px;
-    top: 50px;
+    right: 300px;
+    top: 300px;
 }
 
 .skill-row{
     width: 50%;
     margin: 100px auto;
     text-align: left;
-    line-height: 2;
 }
 
 .skill1{
@@ -71,6 +107,11 @@ p{
     width: 25%;
 }
 
+.contact-sms{
+    width: 30%;
+    margin: 40px auto 60px;
+}
+
 .btn {
     background: #11cdd4;
     background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
@@ -81,7 +122,7 @@ p{
     -webkit-border-radius: 8;
     -moz-border-radius: 8;
     border-radius: 8px;
-    font-family: Arial;
+    font-family: 'Montserrat', sans-serif;
     color: #ffffff;
     font-size: 20px;
     padding: 10px 20px 10px 20px;
@@ -101,6 +142,6 @@ p{
 
 #copiright{
     color: #EAF6F6;
-    margin-bottom: 0px;
-    padding-bottom: 32px;
+    font-size: 1rem;
+    padding: 20px 0;
 }
