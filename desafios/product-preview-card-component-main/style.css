@@ -1,0 +1,17 @@
+body{
+    background-color: hsl(30, 38%, 92%);
+}
+.card-group{
+    margin: 20% 25%;
+}
+img{
+    width: 500px;
+    height: 500px;
+}
+
+
+.product{
+    background-image:url('images/image-product-desktop.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
