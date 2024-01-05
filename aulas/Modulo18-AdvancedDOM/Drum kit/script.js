@@ -1,23 +1,25 @@
-
+//click do mouse
 var numeroDeBotoes= document.querySelectorAll(".drum").length;
 
 for(i=0;i<numeroDeBotoes;i++){
     document.querySelectorAll(".drum")[i].addEventListener("click",clicado);
     
 }
-/*
-document.querySelector(".w").addEventListener("click",clicado);
-document.querySelector(".a").addEventListener("click",clicado);
-document.querySelector(".s").addEventListener("click",clicado);
-document.querySelector(".d").addEventListener("click",clicado);
-document.querySelector(".j").addEventListener("click",clicado);
-document.querySelector(".k").addEventListener("click",clicado);
-document.querySelector(".l").addEventListener("click",clicado);
-*/
 function clicado(){
     var botao=this.innerHTML;
+    criarSom(botao);
+    animacaoDosBotoes(botao);
+    
+}
+//click do teclado
+document.addEventListener("keydown",function(event){
+    criarSom(event.key);
+    animacaoDosBotoes(event.key);
+});
+//////////////////////////////////////
+function criarSom(tecla){
 
-    switch (botao) {
+    switch (tecla) {
         case "w":
             var tom1= new Audio("sounds/tom-1.mp3");
             tom1.play();
@@ -53,9 +55,21 @@ function clicado(){
             snare.play();
         break;
 
-        default:
-            alert(botao);
+        /*default:
+            alert(tecla);
+        */
     }
 }
+/////////////////////////////////////////////////
+
+function animacaoDosBotoes(botao){
+    var botaoPressionado= document.querySelector("."+botao);
+    botaoPressionado.classList.toggle("pressed");
+    //função anonima dentro do set time out
+    setTimeout(function(){
+        botaoPressionado.classList.toggle("pressed");
+    },100);
+}
+
 
 
