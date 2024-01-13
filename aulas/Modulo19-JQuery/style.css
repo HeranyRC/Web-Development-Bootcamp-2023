@@ -1,0 +1,10 @@
+.Gigante{
+    font-size: 10rem;
+    color: yellow;
+    font-family: cursive;
+}
+
+.margem-50{
+    margin: 50px;
+    background-color: chartreuse;
+}
