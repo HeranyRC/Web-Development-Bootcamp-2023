@@ -4,6 +4,12 @@ var gamePattern=[];
 
 function nextSequence() {
     var random= Math.floor(Math.random()*4);
-    var randomChosenColour;
+    var randomChosenColour=buttonColours[random];
+    gamePattern.push(randomChosenColour);
+
+    $(randomChosenColour).fadeOut(200).fadeIn(200);
 }
+
+
+
 
