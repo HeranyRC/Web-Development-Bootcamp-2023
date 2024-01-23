@@ -3,15 +3,17 @@ var buttonColors=["green","red","yellow","blue"];
 var gamePattern=[];
 var userClickedPattern=[];
 var level=0;
+var flag=true;
+var lastItem= userClickedPattern.length-1
 
 function nextSequence() {
     
     gameInteraction();
-    userInteraction();
+    
     $("h1").text("level "+level);
     level++;
 }
-
+userInteraction();
 function gameInteraction(){
     var random= Math.floor(Math.random()*4);
     var randomChosenColor=buttonColors[random];
@@ -33,6 +35,7 @@ function userInteraction(){
         //animatePress(userChosenColor);
         animacao(userChosenColor);
         userClickedPattern.push(userChosenColor);
+        checkAnswer(lastItem);
         console.log(userClickedPattern);
     });
 }
@@ -46,13 +49,18 @@ function animatePress(currentColor){
 */
 
 function start(){
-    if(level===0)
+    if(flag)
         $(document).keypress(nextSequence);
-    
+    else
+        alert("Yha");
+    flag=false;
 }
 
-function checkAnswer(level){
-
-}
+function checkAnswer(currentLevel){
+    if(userClickedPattern[currentLevel]==gamePattern[currentLevel]){
+        console.log("Certo...");
+        nextSequence();
+    }
+} 
 
 start();
